@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="script" href="script.js">
     <title>Principal</title>
 </head>
 <body class="main">
     <div class="mainhome">
         <div class="menuadd">
-        <img src="img/logo-cad.png" alt="" class="logocad" width="35px" height="35px">
+            <img src="img/logo-cad.png" alt="" onclick="adicionar()" class="logocad" width="35px" height="35px">
         </div>   
         <div class="sidebar">
             <div>
@@ -22,5 +23,25 @@
             </div>
         </div>
 </div>
+<script>
+    function adicionar(){
+        if (!document.getElementById('addMotorista')){
+            let addMotorista = document.createElement('dialog')
+            addMotorista.setAttribute('open', '')
+            addMotorista.setAttribute('id', 'addMotorista')
+            document.body.appendChild(addMotorista)
+            let x = document.createElement('img')
+            x.setAttribute('src', 'img/x.png')
+            x.setAttribute('id', 'x')
+            x.setAttribute('onclick', )
+            addMotorista.appendChild(x)
+        }else{
+            document.getElementById('addMotorista').remove()
+        }
+    }
+    function fechar(){
+        
+    }
+</script>
 </body>
 </html>

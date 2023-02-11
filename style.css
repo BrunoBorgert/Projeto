@@ -44,7 +44,21 @@ input {
     top: 100%;
     left: 35%;
 }
-
+#addMotorista{
+    z-index: 0;
+    border: none;
+    background: linear-gradient(rgba(0, 0, 0, 0.322), #2f30395e);
+    width: 850px;
+    height: 500px;
+    top: 10%;
+    left: 20%;
+    border-color: gray;
+}
+#x{
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+}
 .topbar{
     height: 50px;
     width: 100%px;
