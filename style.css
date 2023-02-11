@@ -75,3 +75,11 @@ input {
     border-radius: 100px;
     border-width: 2.5;
 }
+.sidebtn{
+    font-size: 10px;
+    height: 15px;
+    width: 245px;
+    position: absolute;
+    top: -15px;
+    left: 3px;
+}
