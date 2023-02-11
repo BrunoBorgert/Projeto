@@ -7,8 +7,21 @@
 }
 body{
     height: 100vh;
-    background: linear-gradient(#30378A , #C35E6E, #0A1167);
+    background: linear-gradient(#30388ab4 , #c35e6fa8, #0a1267a6);
+
 }
 h1{
-    color: black;
+    color: rgba(255, 255, 255, 0.781);
+}
+input { 
+    margin-bottom: 5px;
+    background: rgba(0, 0, 0, 0.253);
+    border: none;
+    outline: none;
+    color: white;
+    size: 13px;
+    padding: 5px;
+}
+::placeholder{
+    color: #ffffff5e;
 }
