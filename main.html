@@ -41,14 +41,14 @@
             let x = document.createElement('img')
             x.setAttribute('src', 'img/x.png')
             x.setAttribute('id', 'x')
-            x.setAttribute('onclick', )
+            x.setAttribute('onclick', fechar('x', 'addMotorista'))
             addMotorista.appendChild(x)
         }else{
-            document.getElementById('addMotorista').remove()
+            fechar('addMotorista')
         }
     }
-    function fechar(){
-        
+    function fechar(sender, id){
+        document.getElementById(id).remove()
     }
 </script>
 </body>
