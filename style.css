@@ -25,3 +25,19 @@ input {
 ::placeholder{
     color: #ffffff5e;
 }
+
+.topbar{
+    height: 90px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    background: linear-gradient(#30378A , #0A1167)
+}
+
+.sidebar{
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    z-index: 0;
+    background-color: #cfcccc41;
+}
