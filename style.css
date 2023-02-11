@@ -46,8 +46,8 @@ input {
 }
 
 .topbar{
-    height: 90px;
-    width: 25%;
+    height: 50px;
+    width: 100%px;
     position: fixed;
     z-index: 1;
     background: linear-gradient(#30378A , #0A1167)
@@ -59,12 +59,19 @@ input {
     position: fixed;
     z-index: 0;
     background-color: #2f3039da;
+    border-right-color: rgba(0, 0, 0, 0.233);
+    border-right-style: solid;
 }
 .menuadd{
-    border: none;
-    border-radius: 50px;
+    margin: 0;
+    padding: 0;
     position: absolute;
-    top: 580px;
-    left: 94%;
-    padding: 50px;
+    top: 80%;
+    left: 90%;
+}
+.logocad:hover{
+    border-style: solid;
+    border-color: rgba(75, 74, 74, 0.76);
+    border-radius: 100px;
+    border-width: 2.5;
 }
