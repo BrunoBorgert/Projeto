@@ -12,8 +12,11 @@ body{
 }
 h1{
     color: rgba(255, 255, 255, 0.781);
+    position: absolute;
+    top: -65%;
+    left: 25%;
 }
-input { 
+input {     
     margin-bottom: 5px;
     background: rgba(0, 0, 0, 0.253);
     border: none;
@@ -24,6 +27,19 @@ input {
 }
 ::placeholder{
     color: #ffffff5e;
+}
+
+.box-login{
+    padding: 5px;
+    position: absolute;
+    top: 45%;
+    left: 41%;
+    
+}
+#botao{
+    position: absolute;
+    top: 100%;
+    left: 35%;
 }
 
 .topbar{
