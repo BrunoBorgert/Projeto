@@ -4,9 +4,11 @@
     padding: 0;
     font-family: 'Raleway', sans-serif;
     size: 10px;
-    opacity: 0.5;
 }
 body{
     height: 100vh;
-    background: linear-gradient(#30378A , #C35E6E );
+    background: linear-gradient(#30378A , #C35E6E, #0A1167);
+}
+h1{
+    color: black;
 }
