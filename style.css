@@ -5,10 +5,13 @@
     font-family: 'Raleway', sans-serif;
     size: 10px;
 }
-body{
+.index{
     height: 100vh;
     background: linear-gradient(#30388ab4 , #c35e6fa8, #0a1267a6);
 
+}
+.main{ 
+    background-color: white; 
 }
 h1{
     color: rgba(255, 255, 255, 0.781);
@@ -44,7 +47,7 @@ input {
 
 .topbar{
     height: 90px;
-    width: 100%;
+    width: 25%;
     position: fixed;
     z-index: 1;
     background: linear-gradient(#30378A , #0A1167)
@@ -52,8 +55,16 @@ input {
 
 .sidebar{
     height: 100%;
-    width: 300px;
+    width: 250px;
     position: fixed;
     z-index: 0;
-    background-color: #cfcccc41;
+    background-color: #2f3039da;
+}
+.menuadd{
+    border: none;
+    border-radius: 50px;
+    position: absolute;
+    top: 580px;
+    left: 94%;
+    padding: 50px;
 }
