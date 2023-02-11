@@ -47,15 +47,18 @@ input {
 #addMotorista{
     z-index: 0;
     border: none;
-    background: linear-gradient(rgba(0, 0, 0, 0.322), #2f30395e);
-    width: 850px;
-    height: 500px;
+    background: linear-gradient(rgb(97, 96, 96), #2f3039);
+    width: 65%;
+    height: 80%;
     top: 10%;
     left: 20%;
     border-color: gray;
 }
 #x{
     z-index: 1;
+    position: absolute;
+    top: 1%;
+    left: 95%;
     width: 30px;
     height: 30px;
 }
