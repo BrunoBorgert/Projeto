@@ -45,14 +45,21 @@
             let x = document.createElement('img')
             x.setAttribute('src', 'img/x.png')
             x.setAttribute('id', 'x')
-            //x.setAttribute('onclick', )
+            x.setAttribute('onclick', 'fechar("x")')
             addMotorista.appendChild(x)
         }else{
             fechar('addMotorista')
         }
     }
-    function fechar(sender, id){
-        document.getElementById(id).remove()
+    function fechar(id){
+        if (id == 'addMotorista'){
+            document.getElementById(id).remove()
+            return
+        }
+        if (id == 'x'){
+            document.getElementById('x').setAttribute('onclick', 'fechar("addMotorista")')
+            document.getElementById('addMotorista').remove()
+        }
     }
 </script>
 </body>
