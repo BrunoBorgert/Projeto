@@ -38,7 +38,7 @@
                     <button id="finalizarcadastro">Finalizar</button>
                 </div>
                 <div class="fotomotorista" oncli></div>                
-                <img id="x" src="img/x.png" onclick="fechar()">
+                <img id="x" src="img/x.png" onclick="abrirFechar('addMotorista', 'open')">
             </dialog>
         </div>
         <div class="menumotorista">
@@ -110,7 +110,7 @@
     function fechaAbertos(id){
         const listaMenu = ['visuamoto', 'atualHistorico', 'visuagrafico']
 
-        for (var i = 0; i < listaMenu.length; i++){
+        for (var i = 0; i < listaMenu.length - 1; i++){
             if (listaMenu[i] != id){
                 document.getElementById(listaMenu[i]).setAttribute('hidden', '')
             }

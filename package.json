@@ -1,0 +1,23 @@
+{
+  "name": "projeto",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Caminhão",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrunoBorgert/Sistema-Truck-Logistic-1.0.git"
+  },
+  "author": "Bruno Borgert",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BrunoBorgert/Sistema-Truck-Logistic-1.0/issues"
+  },
+  "homepage": "https://github.com/BrunoBorgert/Sistema-Truck-Logistic-1.0#readme",
+  "dependencies": {
+    "mysql": "^2.18.1"
+  }
+}
