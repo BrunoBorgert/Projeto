@@ -10,6 +10,37 @@
 </head>
 <body class="main">
     <div class="mainhome">
+        <div>
+            <dialog id="addMotorista">
+                <div class="imagemdomotorista">  </div> 
+                <header id="headeraddmotorista"></header>
+                <br>
+
+                <div class="cadastromotorista">
+                    <input type="text" id="input1" placeholder="Nome Completo">
+                    <input type="date" id="input2" >
+                    <input type="text" id="input3"placeholder="CPF">
+                    <select name="select" id="selectcaminhao">
+                        <option value="valor0" selected>Selecione o tipo de veiculo</option>
+                        <option value="valor1">Caminhão Toco</option>
+                        <option value="valor2">Carreta</option>
+                        <option value="valor3">Carreta Bitrem</option>
+                        <option value="valor4">Carreta Bitrem - Container</option>
+                        <option value="valor5">Caminhão Truck</option>
+                        <option value="valor6">Van</option>
+                        <option value="valor7">Kombi</option>
+                        <option value="valor8">Carro</option>
+                        <option value="valor9">Moto</option>
+                        <option value="valor9">Outros</option>
+                    </select>
+                    <input type="text" id="input4" placeholder="Placa do Veiculo">
+                    <input type="datetime-local" id="input5">
+                    <button id="finalizarcadastro">Finalizar</button>
+                </div>
+                <div class="fotomotorista" oncli></div>                
+                <img id="x" src="img/x.png" onclick="fechar()">
+            </dialog>
+        </div>
         <div class="menumotorista">
             <div id="visuamoto">
                 <header id="datemoto">
@@ -24,12 +55,7 @@
         </div>
         <div class="menuadd">
             <img src="img/logo-cad.png" alt="" onclick="abrir()" class="logocad" width="35px" height="35px">
-        </div> 
-        <div>
-            <dialog id="addMotorista">
-                <img id="x" src="img/x.png" onclick="fechar()">
-            </dialog>
-        </div>  
+        </div>   
         <div class="sidebar">
             <div class="iconusuario" id="iconusuario"> 
                 <div class="inf">
