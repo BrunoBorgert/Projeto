@@ -213,6 +213,10 @@ input {
     border-radius: 100%;
 
 }
+#logout{
+    background-color: transparent;
+    border: none;
+}
 #input1{
     position: fixed;
     top: 55%;
