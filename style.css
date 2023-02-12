@@ -131,3 +131,12 @@ input {
     left: 10%;
     z-index: 1;
 }
+.menumotorista{
+    height: 100%;
+    width: 76.5%;
+    position: absolute;
+    top: 0px;
+    right:50% ;
+    left: 23.4%;
+    background-color: rgb(0, 0, 0);
+}
