@@ -149,7 +149,7 @@ input {
 #botao:hover{
     opacity: 0.7;
 }
-#visuamoto{
+#visuamoto, #atualHistorico, #visuaGrafico{
     border: none;
     height: 60%;
     width: 8%;
@@ -187,6 +187,6 @@ input {
     font-size: 15px;
 }
 #logout{
-    background-color: rgba(255, 255, 255, 0);
+    background-color: transparent;
     border: none;
 }

@@ -11,23 +11,37 @@
 <body class="main">
     <div class="mainhome">
         <div class="menumotorista">
-            <div id="visuamoto">
+            <div id="visuamoto" hidden>
+                <p>motorista</p>
+            </div>
+            <div id="atualHistorico" hidden>
                 <header id="datemoto">
-                <p>Informe a data</p>
-                <input type="date"> até </input>
-                <input type="date"></input>
-                <button id="botaotelamotorista">Aplicar</button>
-                <button id="exit" >X</button>
-            </header>
+                    <p>Informe a data</p>
+                    <input type="date"> até </input>
+                    <input type="date"></input>
+                    <button id="botaotelamotorista">Aplicar</button>
+                    <button id="exit" onclick="abrirFechar('atualHistorico', 'hidden')">X</button>
+                </header>
+                <p>historico</p>
+            </div>
+            <div id="visuaGrafico" hidden>
+                <header id="datemoto">
+                    <p>Informe a data</p>
+                    <input type="date"> até </input>
+                    <input type="date"></input>
+                    <button id="botaotelamotorista">Aplicar</button>
+                    <button id="exit" onclick="abrirFechar('visuaGrafico', 'hidden')">X</button>
+                </header>
+                <p>grafico</p>
             </div>
             <header id="headermotorista">asdasdas</header>
         </div>
         <div class="menuadd">
-            <img src="img/logo-cad.png" alt="" onclick="abrir()" class="logocad" width="35px" height="35px">
+            <img src="img/logo-cad.png" alt="" onclick="abrirFechar('addMotorista', 'open')" class="logocad" width="35px" height="35px">
         </div> 
         <div>
             <dialog id="addMotorista">
-                <img id="x" src="img/x.png" onclick="fechar()">
+                <img id="x" src="img/x.png" onclick="abrirFechar('addMotorista', 'open')">
             </dialog>
         </div>  
         <div class="sidebar">
@@ -37,11 +51,11 @@
                 </div>
             </div>
             <div class="divbutton">
-                <button class="sidebtn" id="motoristas" >Motoristas</button>
+                <button class="sidebtn" id="motoristas" onclick="abrirFechar('visuamoto', 'hidden')">Motoristas</button>
                 <br>
-                <button class="sidebtn" id="historico">Historico</button>
+                <button class="sidebtn" id="historico" onclick="abrirFechar('atualHistorico', 'hidden')">Historico</button>
                 <br>
-                <button class="sidebtn" id="grafico">Grafico</button>
+                <button class="sidebtn" id="grafico" onclick="abrirFechar('visuaGrafico', 'hidden')">Grafico</button>
             </div>
             <form action="index.html">
                     <div class="iconlou">
@@ -54,15 +68,22 @@
 </div>
 </body>
 <script>
-    function abrir(){
-        if (!document.getElementById('addMotorista').hasAttribute('open')){
-            document.getElementById('addMotorista').setAttribute('open', '')
+    function abrirFechar(id, type){
+        if (!document.getElementById(id).hasAttribute(type)){
+            document.getElementById(id).setAttribute(type, '')
         }else{
-            fechar()
+            document.getElementById(id).removeAttribute(type)
         }
+        fechaAbertos(id)
     }
-    function fechar(){
-        document.getElementById('addMotorista').removeAttribute('open')
+    function fechaAbertos(id){
+        const listaMenu = ['visuamoto', 'atualHistorico', 'visuagrafico']
+
+        for (var i = 0; i < listaMenu.length; i++){
+            if (listaMenu[i] != id){
+                document.getElementById(listaMenu[i]).setAttribute('hidden', '')
+            }
+        }
     }
 </script>
 </html>
