@@ -45,13 +45,14 @@ input {
     left: 35%;
 }
 #addMotorista{
-    z-index: 0;
+    z-index: 1;
     border: none;
     background: linear-gradient(rgb(97, 96, 96), #2f3039);
     width: 65%;
+    position: absolute;
     height: 80%;
-    top: 10%;
-    left: 20%;
+    top: 15%;
+    left: 27%;
     border-color: gray;
 }
 #x{
@@ -86,7 +87,7 @@ input {
     padding: 0;
     position: absolute;
     top: 80%;
-    left: 90%;
+    left: 94.5%;
 }
 .sidebtn:hover, .logocad:hover, .iconlogout:hover{
     border-style: solid;
@@ -186,7 +187,74 @@ input {
     top: 1%;
     font-size: 15px;
 }
-#logout{
-    background-color: transparent;
+#headeraddmotorista{
+    height: 35px;
+    background-color: rgba(0, 0, 0, 0.151);
+}
+.cadastromotorista{
+    position: fixed;
+    left: 30%;
+    top: 45%;
+    color: white;
+}
+.fotomotorista{
+    position: absolute;
+    top: 25%;
+    left: 60%;
+}
+.imagemdomotorista{
+    background-color: black;
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    top: 15%;
+    left: 40%;
     border: none;
+    border-radius: 100%;
+
+}
+#input1{
+    position: fixed;
+    top: 55%;
+    padding: 10px;
+}
+#input2{
+    position: fixed;
+    top: 62%;
+    padding: 10px;
+}
+#input3{
+    position: fixed;
+    top: 69%;
+    padding: 10px;
+}
+#input4{
+    position: fixed;
+    top: 55%;
+    left: 70%;
+    padding: 10px;
+}
+#input5{
+    position: fixed;
+    top: 62%;
+    left: 70%;
+    padding: 10px;
+}
+#selectcaminhao{
+    position: fixed;
+    top: 69%;
+    left: 70%;
+    padding: 10px;
+}
+#finalizarcadastro{
+    position: fixed;
+    top: 90%;
+    left: 54%;
+    height: 20px;
+    width: 100px;
+    border: none;
+    background: rgba(255, 255, 255, 0.178);
+    border-radius: 5%;
+    align-items: center;
+    color: white;
 }
