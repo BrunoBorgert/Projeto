@@ -88,12 +88,11 @@ input {
     top: 80%;
     left: 90%;
 }
-.logocad:hover , .iconlogout:hover{
+.sidebtn:hover, .logocad:hover, .iconlogout:hover{
     border-style: solid;
     border-color: rgba(75, 74, 74, 0.76);
     border-radius: 100px;
     border-width: 2.5;
-    
 }
 .sidebtn{
     border-width: 0.5px;
@@ -102,7 +101,6 @@ input {
     color: rgb(255, 255, 255);
     width: 250px;
     font-size: 12px;
-
 }
 .divbutton{
     position: absolute;
