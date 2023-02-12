@@ -14,8 +14,13 @@
             <header id="headermotorista">asdasdas</header>
         </div>
         <div class="menuadd">
-            <img src="img/logo-cad.png" alt="" onclick="adicionar()" class="logocad" width="35px" height="35px">
-        </div>   
+            <img src="img/logo-cad.png" alt="" onclick="abrir()" class="logocad" width="35px" height="35px">
+        </div> 
+        <div>
+            <dialog id="addMotorista">
+                <img id="x" src="img/x.png" onclick="fechar()">
+            </dialog>
+        </div>  
         <div class="sidebar">
             <div class="iconusuario" id="iconusuario"> 
                 <div class="inf">
@@ -29,37 +34,26 @@
                 <br>
                 <button class="sidebtn" id="grafico">Grafico</button>
             </div>
-            <div class="iconlou">
-                <img src="img/logout-icon.png" alt="" class="iconlogout" width="35px" height="35px"> 
-            </div>
+            <form action="index.html">
+                    <div class="iconlou">
+                        <button id="logout" type="submit">
+                            <img src="img/logout-icon.png" alt="" class="iconlogout" width="35px" height="35px">
+                        </button>
+                    </div>
+            </form>
         </div>
 </div>
 </body>
 <script>
-    function adicionar(){
-        if (!document.getElementById('addMotorista')){
-            let addMotorista = document.createElement('dialog')
-            addMotorista.setAttribute('open', '')
-            addMotorista.setAttribute('id', 'addMotorista')
-            document.body.appendChild(addMotorista)
-            let x = document.createElement('img')
-            x.setAttribute('src', 'img/x.png')
-            x.setAttribute('id', 'x')
-            x.setAttribute('onclick', 'fechar("x")')
-            addMotorista.appendChild(x)
+    function abrir(){
+        if (!document.getElementById('addMotorista').hasAttribute('open')){
+            document.getElementById('addMotorista').setAttribute('open', '')
         }else{
-            fechar('addMotorista')
+            fechar()
         }
     }
-    function fechar(id){
-        if (id == 'addMotorista'){
-            document.getElementById(id).remove()
-            return
-        }
-        if (id == 'x'){
-            document.getElementById('x').setAttribute('onclick', 'fechar("addMotorista")')
-            document.getElementById('addMotorista').remove()
-        }
+    function fechar(){
+        document.getElementById('addMotorista').removeAttribute('open')
     }
 </script>
 </html>
